@@ -371,9 +371,9 @@ def runLevel1(surface,FPS,fpsClock):
         elif (dot1Colour == detectWhite or dot1Colour == detectGreen)  and (dot2Colour == detectWhite or dot2Colour == detectGreen) and (dot3Colour == detectWhite or dot3Colour == detectGreen) and (dot4Colour == detectWhite or dot4Colour == detectGreen) and (dot5Colour == detectWhite or dot5Colour == detectGreen) and (dot6Colour == detectWhite or dot6Colour == detectGreen) and (dot7Colour == detectWhite or dot7Colour == detectGreen) and (dot8Colour == detectWhite or dot8Colour == detectGreen):
             ok = 0
         else:
-            pygame.mixer.music.stop()
+            #pygame.mixer.music.stop()
             #pygame.mixer.music.load("Splat Sound Effect.mp3")
-            #pygame.mixer.music.play(0)
+            #pygame.mixer.music.play(splat)
             #pygame.mixer.music.set_volume(0.5)
             score = 0
             return "Dead", score
@@ -426,7 +426,7 @@ def runLevel2(surface,FPS,fpsClock,score1):
         rectangle7 = pygame.Rect(234,85,182,68)
         rectangle8 = pygame.Rect(416, 85, 68, 583)
         rectangle9 = pygame.Rect(484,600,300,68)
-        rectangle10 = pygame.Rect(300,800,765,-37)
+        rectangle10 = pygame.Rect(300,763,765,37)
         pygame.draw.rect(surface,white,rectangle,0)
         pygame.draw.rect(surface,green,rectangle2,0)
         pygame.draw.rect(surface,white,rectangle3,0)
@@ -519,7 +519,7 @@ def runLevel3(surface,FPS,fpsClock,score1):
         rectangle4 = pygame.Rect(234, 85, 732, 68)
         rectangle5 = pygame.Rect(966, 85, 68, 649)
         rectangle6 = pygame.Rect(566, 666, 400, 68)
-        rectangle7 = pygame.Rect(566, 666, 68, -116)
+        rectangle7 = pygame.Rect(566, 550, 68, 116)
         pygame.draw.rect(surface,white,rectangle,0)
         pygame.draw.rect(surface,green,rectangle2,0)
         pygame.draw.rect(surface,white,rectangle3,0)
