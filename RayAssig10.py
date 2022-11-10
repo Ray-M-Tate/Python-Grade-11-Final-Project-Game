@@ -53,25 +53,25 @@ def runMenu(surface,FPS,fpsClock):
                 surface.fill(white)
                 return "Scores"
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render("START", True, black )
         textRect = text.get_rect()
         textRect.center = (200,200)
         surface.blit(text, textRect)
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render("RULES", True, black )
         textRect = text.get_rect()
         textRect.center = (600,200)
         surface.blit(text, textRect)
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render("EXIT", True, black )
         textRect = text.get_rect()
         textRect.center = (1000,200)
         surface.blit(text, textRect)
 
-        font = pygame.font.SysFont("ComicSans", 120)
+        font = pygame.font.SysFont("ComicSans", 84)
         text = font.render("Line Walker", True, black )
         textRect = text.get_rect()
         textRect.center = (600,500)
@@ -113,31 +113,31 @@ def runRules(surface,FPS,fpsClock):
                 surface.fill(white)
                 return start
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render("Control the dot my moving the mouse.", True, black )
         textRect = text.get_rect()
         textRect.center = (600,200)
         surface.blit(text, textRect)
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render("Move the dot from start to end, keeping it within the lines.", True, black )
         textRect = text.get_rect()
         textRect.center = (600,300)
         surface.blit(text, textRect)
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render("Gain points by completing levels quickly.", True, black )
         textRect = text.get_rect()
         textRect.center = (600,400)
         surface.blit(text, textRect)
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render("Use \"ESC\" at any time to exit.", True, black )
         textRect = text.get_rect()
         textRect.center = (600,500)
         surface.blit(text, textRect)
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render("Back", True, black )
         textRect = text.get_rect()
         textRect.center = (65,35)
@@ -174,7 +174,7 @@ def runScoreHistory(surface,FPS,fpsClock,oldScores):
                 surface.fill(white)
                 return start
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render("Back", True, black )
         textRect = text.get_rect()
         textRect.center = (65,35)
@@ -182,7 +182,7 @@ def runScoreHistory(surface,FPS,fpsClock,oldScores):
 
         if oldScores == []:
             oldScores = "None"
-        font = pygame.font.SysFont("ComicSans", 70)
+        font = pygame.font.SysFont("ComicSans", 49)
         text = font.render(str(oldScores), True, black )
         textRect = text.get_rect()
         textRect.center = (600,450)
@@ -215,19 +215,19 @@ def runDeathScreen(surface,FPS,fpsClock,score):
         button = pygame.Rect(345, 350, 510, 50)
         pygame.draw.rect(surface, orange, button)
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render("Score: "+str(score), True, black )
         textRect = text.get_rect()
         textRect.center = (600,275)
         surface.blit(text, textRect)
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render("Main Menu", True, black )
         textRect = text.get_rect()
         textRect.center = (600,375)
         surface.blit(text, textRect)
 
-        font = pygame.font.SysFont("ComicSans", 120)
+        font = pygame.font.SysFont("ComicSans", 84)
         text = font.render("You Suck", True, black )
         textRect = text.get_rect()
         textRect.center = (600,120)
@@ -265,19 +265,19 @@ def runWinScreen(surface,FPS,fpsClock,score):
         button = pygame.Rect(345, 350, 510, 50)
         pygame.draw.rect(surface, green, button)
 
-        font = pygame.font.SysFont("ComicSans", 120)
+        font = pygame.font.SysFont("ComicSans", 84)
         text = font.render("You Win", True, black )
         textRect = text.get_rect()
         textRect.center = (600,120)
         surface.blit(text, textRect)
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render("Score: "+str(score), True, black )
         textRect = text.get_rect()
         textRect.center = (600,275)
         surface.blit(text, textRect)
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render("Main Menu", True, black )
         textRect = text.get_rect()
         textRect.center = (600,375)
@@ -311,7 +311,7 @@ def runLevel1(surface,FPS,fpsClock):
                 break
         surface.fill(orange)
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render("Level 1", True, black )
         textRect = text.get_rect()
         textRect.center = (90,42)
@@ -357,7 +357,7 @@ def runLevel1(surface,FPS,fpsClock):
         if score < 0:
             score = 0
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render(str(score), True, black )
         textRect = text.get_rect()
         textRect.center = (1110,42)
@@ -372,9 +372,9 @@ def runLevel1(surface,FPS,fpsClock):
             ok = 0
         else:
             pygame.mixer.music.stop()
-            pygame.mixer.music.load("Splat Sound Effect.mp3")
-            pygame.mixer.music.play(0)
-            pygame.mixer.music.set_volume(0.5)
+            #pygame.mixer.music.load("Splat Sound Effect.mp3")
+            #pygame.mixer.music.play(0)
+            #pygame.mixer.music.set_volume(0.5)
             score = 0
             return "Dead", score
 
@@ -397,7 +397,7 @@ def runLevel2(surface,FPS,fpsClock,score1):
                 break
         surface.fill(orange)
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render("Level 2", True, black )
         textRect = text.get_rect()
         textRect.center = (90,42)
@@ -411,7 +411,7 @@ def runLevel2(surface,FPS,fpsClock,score1):
         if score < score1:
             score = score1
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render(str(score), True, black )
         textRect = text.get_rect()
         textRect.center = (1110,42)
@@ -466,9 +466,9 @@ def runLevel2(surface,FPS,fpsClock,score1):
             ok = 0
         else:
             pygame.mixer.music.stop()
-            pygame.mixer.music.load("Splat Sound Effect.mp3")
-            pygame.mixer.music.play(0)
-            pygame.mixer.music.set_volume(0.25)
+            #pygame.mixer.music.load("Splat Sound Effect.mp3")
+            #pygame.mixer.music.play(0)
+            #pygame.mixer.music.set_volume(0.25)
             return "Dead", score1
 
         pygame.display.update()
@@ -493,7 +493,7 @@ def runLevel3(surface,FPS,fpsClock,score1):
                 break
         surface.fill(orange)
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render("Level 3", True, black )
         textRect = text.get_rect()
         textRect.center = (90,42)
@@ -507,7 +507,7 @@ def runLevel3(surface,FPS,fpsClock,score1):
         if score < score1:
             score = score1
 
-        font = pygame.font.SysFont("ComicSans", 50)
+        font = pygame.font.SysFont("ComicSans", 35)
         text = font.render(str(score), True, black )
         textRect = text.get_rect()
         textRect.center = (1110,42)
@@ -556,9 +556,9 @@ def runLevel3(surface,FPS,fpsClock,score1):
             ok = 0
         else:
             pygame.mixer.music.stop()
-            pygame.mixer.music.load("Splat Sound Effect.mp3")
-            pygame.mixer.music.play(0)
-            pygame.mixer.music.set_volume(0.25)
+            #pygame.mixer.music.load("Splat Sound Effect.mp3")
+            #pygame.mixer.music.play(0)
+            #pygame.mixer.music.set_volume(0.25)
             return "Dead", score1
 
         pygame.display.update()
@@ -574,9 +574,9 @@ def main():
     oldScores = []
 
     while True:
-        pygame.mixer.music.load("Athletic Theme - Super Mario World.mp3")
-        pygame.mixer.music.play(-1)
-        pygame.mixer.music.set_volume(0.25)
+        #pygame.mixer.music.load("Athletic Theme - Super Mario World.mp3")
+        #pygame.mixer.music.play(-1)
+        #pygame.mixer.music.set_volume(0.25)
         menu = runMenu(surface,FPS,fpsClock)
         if menu == "Quit":
             pygame.quit()
